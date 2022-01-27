@@ -1,0 +1,27 @@
+name: QuasarCommand
+author: Quasar
+version: 1.0.0
+api: 4.0.0
+main: Command\Main
+
+commands:
+  heal:
+    usage: /heal
+    description: "heal"
+    permission: heal.cmd
+  feed:
+    usage: /feed
+    description: "feed"
+    permission: feed.cmd
+  enderchest:
+    usage: /ec
+    description: "Ouvre l'enderchest"
+    permission: ec.cmd
+
+permissions:
+  heal.cmd:
+    default: op
+  feed.cmd:
+    default: op
+  ec.cmd:
+    default: op
