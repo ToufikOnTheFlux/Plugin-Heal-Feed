@@ -35,11 +35,6 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage("§3Tu a bien été feed !");
             }
         }
-        if($commandname == "enderchest") {
-            if ($sender instanceof Player) {
-                $sender->getEnderInventory();
-            }
-        }
         return true;
      }
 }
