@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener
         $commandname = $command->getName();
         if ($commandname == "heal") {
             if ($sender instanceof Player) {
-                $sender->sendMessage("§3Tu a été heal");
+                $sender->sendMessage("§3Tu as été heal");
                 $sender->getHealth();
                 $sender->setHealth(20);
             }
@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener
             if ($sender instanceof Player) {
                 $sender->getHungerManager()->setFood(20);
                 $sender->getHungerManager()->setSaturation(20);
-                $sender->sendMessage("§3Tu a bien été feed !");
+                $sender->sendMessage("§3Tu as bien été feed !");
             }
         }
         if ($commandname == "speed") {
