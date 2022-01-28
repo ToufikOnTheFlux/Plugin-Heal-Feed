@@ -6,15 +6,15 @@ main: Command\Main
 
 commands:
   heal:
-    usage: /heal {player}
+    usage: /heal 
     description: "heal"
     permission: heal.cmd
   feed:
-    usage: /feed {player}
+    usage: /feed 
     description: "feed"
     permission: feed.cmd
   speed:
-    usage: /speed {player}
+    usage: /speed 
     description: "speed"
     permission: speed.cmd
   uphealth:
