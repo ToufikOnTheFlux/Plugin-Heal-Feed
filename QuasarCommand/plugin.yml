@@ -6,22 +6,29 @@ main: Command\Main
 
 commands:
   heal:
-    usage: /heal
+    usage: /heal {player}
     description: "heal"
     permission: heal.cmd
   feed:
-    usage: /feed
+    usage: /feed {player}
     description: "feed"
     permission: feed.cmd
-  enderchest:
-    usage: /ec
-    description: "Ouvre l'enderchest"
-    permission: ec.cmd
+  speed:
+    usage: /speed {player}
+    description: "speed"
+    permission: speed.cmd
+  uphealth:
+    usage: /uphealth
+    description: "Ajoute de la vie"
+    permission: uph.cmd
 
 permissions:
   heal.cmd:
     default: op
   feed.cmd:
+    default: true
+  speed.cmd:
     default: op
-  ec.cmd:
-    default: op
+  uph.cmd:
+    default:   op
+
